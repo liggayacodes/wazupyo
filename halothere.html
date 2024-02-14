@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo there!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        .surprise {
+            display: none;
+        }
+        .surprise img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day, my darleng!</h1>
+        <p>I have a special suprays for you..</p>
+        <button class="btn" onclick="revealSurprise()">Click Me!</button>
+        <div class="surprise" id="surprise">
+            <p>SUPRAYS<span style="color: #e74c3c;">&hearts;</span></p>
+            <img src="path_to_your_image.jpg" alt="suprays">
+        </div>
+    </div>
+
+    <script>
+        function revealSurprise() {
+            var surpriseDiv = document.getElementById("surprise");
+            surpriseDiv.style.display = "block";
+        }
+    </script>
+</body>
+</html>
